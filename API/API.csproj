@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>disable</Nullable>
+    <!-- if this is enabled, it automatically makes sting properties required ^ -->
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
