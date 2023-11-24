@@ -13,6 +13,7 @@ namespace API.Helpers
                                            .ForMember(dest => dest.Age, opt => opt.MapFrom(src => src.DateOfBirth.CalculateAge()));
                                            // de unde stie ce este "CalculateAge()" daca am comentat-o?
             CreateMap<Photo, PhotoDto>();
+            CreateMap<MemberUpdateDto, AppUser>();
         }
     }
 }
