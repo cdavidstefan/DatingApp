@@ -14,6 +14,7 @@ namespace API.Helpers
                                            // de unde stie ce este "CalculateAge()" daca am comentat-o?
             CreateMap<Photo, PhotoDto>();
             CreateMap<MemberUpdateDto, AppUser>();
+            CreateMap<RegisterDto, AppUser>();
         }
     }
 }
