@@ -50,7 +50,7 @@ namespace API.Controllers
         {
             var users = await _likesRepository.GetUserLikes(predicate, int.Parse(User.GetUserId()));
 
-            return Ok();
+            return Ok(users);
         }
     }
 }
