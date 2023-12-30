@@ -16,10 +16,6 @@ public class DataContext : IdentityDbContext<AppUser, AppRole, int,
     {
         base.OnModelCreating(builder);
 
-
-
-        
-
         builder.Entity<AppUser>()
             .HasMany(ur => ur.UserRoles)
             .WithOne(u => u.User)
